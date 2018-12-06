@@ -1,0 +1,43 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a{
+  color: inherit;
+}
+a:hover{
+  text-decoration: none;
+  color:inherit;
+}
+.sidebar{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
+  width: 260px;
+  background: #6eaede;
+}
+  .logo{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    background: #559cd4;
+  }
+  .menu{
+    color: white;
+  }
+  .menu ul li{
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+    .active{
+      background-color: #559cd4;
+    }
+  .menu ul li:hover{
+
+  }
