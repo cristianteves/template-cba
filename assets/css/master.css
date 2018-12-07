@@ -35,9 +35,14 @@ a:hover{
     margin-bottom: 20px;
     padding: 10px;
   }
-    .active{
+    .submenu ul li{
+      margin: 0;
+    }
+    .active-li{
       background-color: #559cd4;
     }
-  .menu ul li:hover{
 
-  }
+#main-content{
+  background: #e5f3fc;
+  margin-left: 260px;
+}
