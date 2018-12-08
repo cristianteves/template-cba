@@ -54,23 +54,31 @@ a:hover{
 }
   #titulo{
     color: #559cd4;
+    background: inherit;
   }
-  .searchContent{
-    background-color: #e5f3fc;
-    padding: 20px;
+  #titulo-card{
+    background: inherit;
   }
+  #form-buscar{
+    border: none;
+  }
+    #titulo-buscar{
+      background: inherit;
+      color: #559cd4;
+      font-weight: 500;
+    }
+    .buscador{
+      background-color: #e5f3fc;
+      padding: 20px;
+    }
   #myTab li a{
     border-top: none;
     border-left: none;
     border-right: none;
     background-color: inherit;
   }
-  .nav-link .active{
-    border-top: none;
-    border-left: none;
-    border-right: none;
-    background-color: inherit;
-    border-bottom: 3px solid #559cd4;
+  li a[aria-selected="true"]{
+    border-bottom: 3px solid #559cd4 !important;
   }
 
 /* Responsive */
