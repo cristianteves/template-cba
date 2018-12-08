@@ -14,90 +14,96 @@
 
     <div id="main-content" class="content">
 
-      <div class="sidebar">
-        <div class="logo">
-          <h1 class="">Logo</h1>
-        </div>
+      <div id="menu-main" class="sidebar position-fixed collapse">
         <div class="menu">
-          <ul class="nav p-3 flex-column">
-            <li class="active-li">Inicio</li>
-            <li>
-              <a class="d-flex justify-content-between rotateArrow" data-toggle="collapse" href="#item_1" role="button">Item 1 <i class="material-icons md-18">keyboard_arrow_right</i></a>
-              <div class="submenu collapse" id="item_1">
-                <ul class="nav p-3 flex-column">
-                  <li>item 1</li>
-                  <li>item 2</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a class="d-flex justify-content-between rotateArrow" data-toggle="collapse" href="#item_2" role="button">Item 2 <i class="material-icons md-18">keyboard_arrow_right</i></a>
-              <div class="submenu collapse" id="item_2">
-                <ul class="nav p-3 flex-column">
-                  <li>item 1</li>
-                  <li>item 2</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a class="d-flex justify-content-between rotateArrow" data-toggle="collapse" href="#tablas" role="button">Tablas <i class="material-icons md-18">keyboard_arrow_right</i></a>
-              <div class="submenu collapse" id="tablas">
-                <ul class="nav p-3 flex-column">
-                  <li>item 1</li>
-                  <li>item 2</li>
-                </ul>
-              </div>
-            </li>
-            <li>Formularios</li>
-            <li>
-              <a class="d-flex justify-content-between rotateArrow" data-toggle="collapse" href="#formularios_1" role="button">Formularios <i class="material-icons md-18">keyboard_arrow_right</i></a>
-              <div class="submenu collapse" id="formularios_1">
-                <ul class="nav p-3 flex-column">
-                  <li>item 1</li>
-                  <li>item 2</li>
-                </ul>
-              </div>
-            </li>
-            <li>
-              <a class="d-flex justify-content-between rotateArrow" data-toggle="collapse" href="#formularios_2" role="button">Formularios <i class="material-icons md-18">keyboard_arrow_right</i></a>
-              <div class="submenu collapse" id="formularios_2">
-                <ul class="nav p-3 flex-column">
-                  <li>item 1</li>
-                  <li>item 2</li>
-                </ul>
-              </div>
-            </li>
-          </ul>
+          <div class="logo">
+            <h1 class="text-uppercase">Logo</h1>
+          </div>
+          <div class="menu">
+            <ul class="nav p-3 flex-column">
+              <li class="active-li">Inicio</li>
+              <li>
+                <a class="d-flex justify-content-between rotateArrow" data-toggle="collapse" href="#item_1" role="button">Item 1 <i class="material-icons md-18">keyboard_arrow_right</i></a>
+                <div class="submenu collapse" id="item_1">
+                  <ul class="nav p-3 flex-column">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a class="d-flex justify-content-between rotateArrow" data-toggle="collapse" href="#item_2" role="button">Item 2 <i class="material-icons md-18">keyboard_arrow_right</i></a>
+                <div class="submenu collapse" id="item_2">
+                  <ul class="nav p-3 flex-column">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a class="d-flex justify-content-between rotateArrow" data-toggle="collapse" href="#tablas" role="button">Tablas <i class="material-icons md-18">keyboard_arrow_right</i></a>
+                <div class="submenu collapse" id="tablas">
+                  <ul class="nav p-3 flex-column">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                  </ul>
+                </div>
+              </li>
+              <li>Formularios</li>
+              <li>
+                <a class="d-flex justify-content-between rotateArrow" data-toggle="collapse" href="#formularios_1" role="button">Formularios <i class="material-icons md-18">keyboard_arrow_right</i></a>
+                <div class="submenu collapse" id="formularios_1">
+                  <ul class="nav p-3 flex-column">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <a class="d-flex justify-content-between rotateArrow" data-toggle="collapse" href="#formularios_2" role="button">Formularios <i class="material-icons md-18">keyboard_arrow_right</i></a>
+                <div class="submenu collapse" id="formularios_2">
+                  <ul class="nav p-3 flex-column">
+                    <li>item 1</li>
+                    <li>item 2</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <div class="content main">
+      <div id="menu-mobile" class="d-flex justify-content-end">
+        <button class="btn btn-primary" data-toggle="collapse" data-target="#menu-main" aria-expanded="false" aria-controls="collapseExample"><i class="material-icons">menu</i></button>
+      </div>
+
+      <div class="content">
         <div class="container-fluid">
-          <h1>Prueba para UX</h1>
+          <h1 id="titulo">Prueba para UX</h1>
           <br>
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
+              <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Tab 1</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
+              <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Tab 2</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
+              <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Tab 3</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="about-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">About</a>
+              <a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">Tab 4</a>
             </li>
           </ul>
           <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
               <div class="card">
                 <div class="card-header">
                   Titulo card
                 </div>
                 <div class="card-body">
                   <div class="alert alert-primary" role="alert">
-                    A simple primary alert with <a href="#" class="alert-link">an example link</a>. Give it a click if you like.
+                    <strong>Well done!</strong> You successfully read this important alert message.
                   </div>
 
                   <div class="card">
@@ -105,38 +111,87 @@
                       Featured
                     </div>
                     <div class="card-body">
-                      <div class="form col-md-10 justify-content-between d-flex">
-                        <div class="form-group d-flex flex-column">
-                          <span>N° Documento</span>
-                          <input type="text" name="" value="">
+                      <div class="col-md-12">
+                        <div class="row">
+                          <div class="col-md-2">
+                            <div class="form-group d-flex flex-column">
+                              <span>N° Documento</span>
+                              <input class="form-control" type="text" name="" value="">
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="form-group d-flex flex-column">
+                              <span>N° Documento</span>
+                              <input class="form-control" type="text" name="" value="">
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="form-group d-flex flex-column">
+                              <span>N° Documento</span>
+                              <input class="form-control" type="text" name="" value="">
+                            </div>
+                          </div>
+                          <div class="col-md-2">
+                            <div class="form-group d-flex flex-column">
+                              <span>N° Documento</span>
+                              <input class="form-control" type="text" name="" value="">
+                            </div>
+                          </div>
+                          <div class="col-md-1 d-flex align-items-center">
+                            <button class="btn btn-primary text-uppercase" type="button" name="button">Buscar</button>
+                          </div>
+                          <div class="col-md-2 d-flex align-items-center">
+                            <button class="btn btn-primary text-uppercase" type="button" name="button">Nueva Búsqueda</button>
+                          </div>
                         </div>
-                        <div class="form-group d-flex flex-column">
-                          <span>N° Documento</span>
-                          <input type="text" name="" value="">
-                        </div>
-                        <div class="form-group d-flex flex-column">
-                          <span>N° Documento</span>
-                          <input type="text" name="" value="">
-                        </div>
-                        <div class="form-group d-flex flex-column">
-                          <span>N° Documento</span>
-                          <input type="text" name="" value="">
-                        </div>
-                        <button class="btn btn-primary" type="button" name="button">Buscar</button>
-                        <button class="btn btn-primary" type="button" name="button">Nueva Búsqueda</button>
                       </div>
                     </div>
                   </div>
 
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <div class="col-md-12">
+                    <div class="row">
+                      <div class="col-md-3 d-flex flex-column">
+                        <span>Has error</span>
+                        <input class="form-control" type="text" name="" value="">
+                        <span>Error message</span>
+                      </div>
+                      <div class="col-md-3 d-flex flex-column">
+                        <span>Input group button</span>
+                        <div class="input-group mb-3">
+                          <div class="input-group-prepend">
+                            <button class="btn btn-outline-primary" type="button" name="button">Go</button>
+                          </div>
+                          <input type="text" class="form-control">
+                        </div>
+                      </div>
+                      <div class="col-md-3 d-flex flex-column">
+                        <span>Has error</span>
+                        <div class="input-group">
+                          <input type="text" class="form-control" aria-label="Text input with dropdown button">
+                          <div class="input-group-append">
+                            <button class="btn btn-outline-secondary dropdown-toggle text-uppercase" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">opción 1</button>
+                            <div class="dropdown-menu">
+                              <a class="dropdown-item" href="#">Opcion 1</a>
+                              <a class="dropdown-item" href="#">Opcion 2</a>
+                              <div role="separator" class="dropdown-divider"></div>
+                              <a class="dropdown-item" href="#">Opcion x...</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="col-md-4">
+                    <button class="btn btn-outline-primary text-uppercase" type="button" name="button">Button 1</button>
+                    <button class="btn btn-outline-primary text-uppercase" type="button" name="button">Button 2</button>
+                  </div>
                 </div>
               </div>
             </div>
-            <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-            <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
-            <div class="tab-pane fade" id="about"   role="tabpanel" aria-labelledby="about-tab">...</div>
+            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">...</div>
+            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">...</div>
+            <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4-tab">...</div>
           </div>
         </div>
       </div>

@@ -9,4 +9,10 @@
     })
   }
 
+if (window.innerWidth < 1367){
+  document.getElementById('menu-main').classList.remove('show');
+}else {
+  document.getElementById('menu-main').classList.add('show');
+}
+
 })()

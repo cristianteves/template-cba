@@ -24,8 +24,6 @@ a:hover{
     text-align: center;
     padding: 20px;
     color: white;
-    text-transform: uppercase;
-    font-weight: 500;
     background: #559cd4;
   }
   .menu{
@@ -41,8 +39,48 @@ a:hover{
     .active-li{
       background-color: #559cd4;
     }
+#menu-main{
+  transition: all ease 0.5s;
+}
+#menu-mobile{
+  position: absolute;
+  right: 0;
+  visibility: hidden;
+}
 
 #main-content{
   background: #e5f3fc;
   margin-left: 260px;
+}
+  #titulo{
+    color: #559cd4;
+  }
+  .searchContent{
+    background-color: #e5f3fc;
+    padding: 20px;
+  }
+  #myTab li a{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: inherit;
+  }
+  .nav-link .active{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: inherit;
+    border-bottom: 3px solid #559cd4;
+  }
+
+/* Responsive */
+
+@media(max-width: 1360px){
+    #menu-mobile{
+      visibility: visible;
+      padding: 10px;
+    }
+    #main-content{
+      margin-left: 0;
+    }
 }
