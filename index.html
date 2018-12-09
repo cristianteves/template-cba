@@ -83,22 +83,22 @@
           <br>
           <ul class="nav nav-tabs" id="myTab" role="tablist">
             <li class="nav-item">
-              <a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Tab 1</a>
+              <a class="nav-link active lightblueColor" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Tab 1</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Tab 2</a>
+              <a class="nav-link lightblueColor" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Tab 2</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Tab 3</a>
+              <a class="nav-link lightblueColor" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Tab 3</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">Tab 4</a>
+              <a class="nav-link lightblueColor" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">Tab 4</a>
             </li>
           </ul>
           <div class="tab-content" id="myTabContent">
             <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
               <div class="card">
-                <div id="titulo-card" class="card-header">
+                <div id="titulo-card" class="card-header lightblueColor">
                   Titulo card
                 </div>
                 <div class="card-body">
@@ -107,7 +107,7 @@
                   </div>
 
                   <div id="form-buscar" class="card">
-                    <div id="titulo-buscar" class="card-header">
+                    <div id="titulo-buscar" class="card-header lightblueColor">
                       Buscar persona
                     </div>
                     <div class="card-body">
@@ -115,30 +115,30 @@
                         <div class="row">
                           <div class="col-md-2">
                             <div class="form-group d-flex flex-column">
-                              <span>N° Documento</span>
+                              <span class="lightblueColor">N° Documento</span>
                               <input class="form-control" type="text" name="" value="">
                             </div>
                           </div>
                           <div class="col-md-2">
                             <div class="form-group d-flex flex-column">
-                              <span>Nombre</span>
+                              <span class="lightblueColor">Nombre</span>
                               <input class="form-control" type="text" name="" value="">
                             </div>
                           </div>
                           <div class="col-md-2">
                             <div class="form-group d-flex flex-column">
-                              <span>Apellido</span>
+                              <span class="lightblueColor">Apellido</span>
                               <input class="form-control" type="text" name="" value="">
                             </div>
                           </div>
                           <div class="col-md-2">
                             <div class="form-group d-flex flex-column">
-                              <span>HC</span>
+                              <span class="lightblueColor">HC</span>
                               <input class="form-control" type="text" name="" value="">
                             </div>
                           </div>
                           <div class="col-md-1 d-flex align-items-center">
-                            <button class="btn btn-primary text-uppercase" type="button" name="button">Buscar</button>
+                            <button id="btn-buscar" class="btn btn-primary text-uppercase" type="button" name="button">Buscar</button>
                           </div>
                           <div class="col-md-2 d-flex align-items-center">
                             <button class="btn btn-primary text-uppercase" type="button" name="button">Nueva Búsqueda</button>
@@ -147,16 +147,54 @@
                       </div>
                     </div>
                   </div>
+                  <br>
+                  <div class="col-md-12">
+                    <h4 class="lightblueColor">Tabla de resultados</h4>
+                    <table class="table">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Nº Documento</th>
+                          <th scope="col">Nombre</th>
+                          <th scope="col">Apellido</th>
+                          <th scope="col">Acciones</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>3024245522</td>
+                          <td>Alejandro</td>
+                          <td>Gutierrez</td>
+                          <td>
+                            <a title="Copiar" onclick="alert('Registro copiado')"><i class="material-icons text-primary">file_copy</i></a>
+                            <a title="Editar" data-toggle="modal" data-target="#editModal"><i class="material-icons text-warning">edit</i></a>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>3024245522</td>
+                          <td>Alejandro</td>
+                          <td>Gutierrez</td>
+                          <td>
+                            <a title="Copiar" onclick="alert('Registro copiado')"><i class="material-icons text-primary">file_copy</i></a>
+                            <a title="Editar" data-toggle="modal" data-target="#editModal"><i class="material-icons text-warning">edit</i></a>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+
 
                   <div class="col-md-12">
                     <div class="row">
                       <div class="col-md-3 d-flex flex-column">
-                        <span>Has error</span>
+                        <span class="lightblueColor">Has error</span>
                         <input class="form-control" type="text" name="" value="">
-                        <span>Error message</span>
+                        <span class="font-italic lightblueColor">Error message</span>
                       </div>
                       <div class="col-md-3 d-flex flex-column">
-                        <span>Input group button</span>
+                        <span class="lightblueColor">Input group button</span>
                         <div class="input-group mb-3">
                           <div class="input-group-prepend">
                             <button class="btn btn-outline-primary" type="button" name="button">Go</button>
@@ -165,11 +203,11 @@
                         </div>
                       </div>
                       <div class="col-md-3 d-flex flex-column">
-                        <span>Has error</span>
+                        <span class="lightblueColor">Input group select right</span>
                         <div class="input-group">
                           <input type="text" class="form-control" aria-label="Text input with dropdown button">
                           <div class="input-group-append">
-                            <button class="btn btn-outline-secondary dropdown-toggle text-uppercase" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">opción 1</button>
+                            <button class="btn btn-outline-primary dropdown-toggle text-uppercase" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">opción 1</button>
                             <div class="dropdown-menu">
                               <a class="dropdown-item" href="#">Opcion 1</a>
                               <a class="dropdown-item" href="#">Opcion 2</a>
@@ -198,7 +236,25 @@
 
     </div>
 
-
+    <!-- Edit Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Editar registro</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>

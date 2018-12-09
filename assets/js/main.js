@@ -9,10 +9,20 @@
     })
   }
 
-if (window.innerWidth < 1367){
-  document.getElementById('menu-main').classList.remove('show');
-}else {
-  document.getElementById('menu-main').classList.add('show');
-}
+  function resize(){
+
+      if (($(window).width() || window.innerWidth()) < 1367){
+        document.getElementById('menu-main').classList.remove('show')
+        document.getElementById('btn-buscar').classList.add('mb-2')
+      }else{
+        document.getElementById('menu-main').classList.add('show')
+        document.getElementById('btn-buscar').classList.remove('mb-2')
+      }
+  }
+
+  $(window).resize(resize);
+
+  resize();
+
 
 })()

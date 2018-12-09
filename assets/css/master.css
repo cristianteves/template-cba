@@ -5,6 +5,7 @@
 }
 a{
   color: inherit;
+  cursor: pointer;
 }
 a:hover{
   text-decoration: none;
@@ -39,6 +40,10 @@ a:hover{
     .active-li{
       background-color: #559cd4;
     }
+
+.lightblueColor{
+  color: #4682b1 !important;
+}
 #menu-main{
   transition: all ease 0.5s;
 }
@@ -64,7 +69,6 @@ a:hover{
   }
     #titulo-buscar{
       background: inherit;
-      color: #559cd4;
       font-weight: 500;
     }
     .buscador{
