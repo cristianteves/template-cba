@@ -87,7 +87,7 @@ a:hover{
 
 /* Responsive */
 
-@media(max-width: 1360px){
+@media(max-width: 1366px){
     #menu-mobile{
       visibility: visible;
       padding: 10px;
